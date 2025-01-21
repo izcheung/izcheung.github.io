@@ -1,0 +1,20 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-tourney: 'Tourney', sans-serif;
+  --font-gruppo: 'Gruppo', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-gruppo);
+}
