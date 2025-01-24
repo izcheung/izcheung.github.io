@@ -185,7 +185,8 @@ a {
 }
 
 .github_btn,
-.website_btn {
+.website_btn,
+.youtube_btn {
     font-family: 'Questrial', sans-serif;
     border-radius: 50px;
     color: black;
