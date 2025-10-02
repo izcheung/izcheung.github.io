@@ -3,9 +3,17 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth !important;
+    font-family: 'Questrial', sans-serif;
+    cursor: none !important;
 }
 
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
 }
@@ -14,6 +22,25 @@ h1 {
     font-size: 3rem;
     margin: 0px;
     text-shadow: 1px 1px 3px #000000;
+}
+
+/* Ensure animated greeting letters inherit heading font/spacing */
+#greetingContainer {
+    font-family: 'Questrial', sans-serif;
+}
+
+#greetingContainer .letter,
+#greetingContainer .space {
+    font: inherit;
+}
+
+#greetingContainer .letter {
+    display: inline-block;
+}
+
+#greetingContainer .space {
+    display: inline-block;
+    width: 0.3rem;
 }
 
 h2 {
@@ -35,13 +62,13 @@ a {
 }
 
 #main_screen {
-    width: 100%; 
+    width: 100%;
     height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
 }
 
-.slides{
+section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -53,24 +80,26 @@ a {
     padding: 10%;
 }
 
-#home{
+
+
+#home {
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
     gap: 3%;
 }
 
-#projects{
+#projects {
     background: linear-gradient(180deg, rgb(161, 129, 103), rgb(245, 233, 223));
     height: auto;
 }
 
-#about{
+#about {
     background: linear-gradient(180deg, #bcb5b2, #453f3d);
     height: auto;
     gap: 15%;
 }
 
-#connect{
+#connect {
     background-color: black;
 }
 
@@ -81,14 +110,14 @@ a {
     display: inline-block;
 } */
 
-#top_navbar{
+#top_navbar {
     position: sticky;
     z-index: 100;
     margin-right: 5%;
     top: 2%;
 }
 
-#nav_dropdown{
+#nav_dropdown {
     margin-top: 3%;
 }
 
@@ -96,13 +125,13 @@ a {
     padding: 0px;
 }
 
-#large_screen_nav{
+#large_screen_nav {
     display: none;
 }
 
 /* Home page */
 
-.navbar-toggler{
+.navbar-toggler {
     margin-top: 8px;
 }
 
@@ -112,17 +141,14 @@ a {
     border-radius: 50px;
     border: white 2px solid;
     color: white;
-    transition: all .2s ease-in-out;
 }
 
-#resume_btn:hover {
-    transform: scale(1.2);
-}
+
 
 /* Projects page */
 
 #cards {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -130,27 +156,27 @@ a {
     z-index: 1;
 }
 
-.card{
+.card {
     width: 70%;
     border: black;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     z-index: 1;
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 30px 30px 0px 0px;
     width: 100%;
     height: auto;
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-title{
+.card-title {
     font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 2rem;
@@ -158,11 +184,12 @@ a {
     justify-content: center;
 }
 
-.card-text{
+.card-text {
     margin: 2%;
 }
 
-.github_btn, .website_btn {
+.github_btn,
+.website_btn {
     font-family: 'Questrial', sans-serif;
     border-radius: 50px;
     color: black;
@@ -172,7 +199,8 @@ a {
     /* margin: 5%; */
 }
 
-.github_btn:hover, .website_btn:hover {
+.github_btn:hover,
+.website_btn:hover {
     background-color: black;
     color: white;
 }
@@ -195,7 +223,7 @@ a {
     gap: 30px;
 }
 
-#headshot{
+#headshot {
     border-radius: 10px;
     max-width: 300px;
     height: auto;
@@ -203,11 +231,11 @@ a {
     display: flex;
     width: 80%;
     align-items: center;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
     justify-content: center;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +243,7 @@ a {
     gap: 15px;
 }
 
-#icon_container{
+#icon_container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -223,8 +251,8 @@ a {
     margin-top: 2%;
 }
 
-#connect{
-    
+#connect {
+
     gap: 0px;
 }
 
@@ -232,20 +260,23 @@ a {
     margin: 0px;
 }
 
-#github_icon, #linkedin_icon, #email_icon {
+#github_icon,
+#linkedin_icon,
+#email_icon {
     width: 30px;
 }
 
-.icons:hover{
-    transform: scale(1.2);
+.icons {
+    opacity: 0;
+    transform: translateY(50px);
 }
 
-.skill_icon{
+.skill_icon {
     width: 50px;
     height: 50px;
 }
 
-#skills{
+#skills {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -253,14 +284,14 @@ a {
     gap: 5%;
 }
 
-.skill{
+.skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.skill p{
+.skill p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,35 +300,81 @@ a {
     font-size: 15px;
 }
 
-#skill_wrapper{
+#skill_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0%; 
+    gap: 0%;
 }
 
-#skill_wrapper h3{
+#skill_wrapper h3 {
     margin-top: 5%;
 }
+
+
+/* Cursor */
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-4px, -4px);
+}
+
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border: 5px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-16px, -16px);
+    opacity: 0.7;
+    transition: border-color 0.3s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+}
+
+.cursor-dot.hover {
+    background: #f97316 !important;
+    transform: translate(-4px, -4px) scale(1.5);
+}
+
+.cursor-ring.hover {
+    width: 50px;
+    height: 50px;
+    transform: translate(-25px, -25px);
+    border-color: #f97316 !important;
+    opacity: 1;
+}
+
+
 
 /* Responsive layout */
 
 @media (min-width: 768px) {
 
     /* Hide mobile toggle navigation bar */
-    .navbar-toggler, #nav_dropdown {
+    .navbar-toggler,
+    #nav_dropdown {
         display: none;
     }
 
     /* Display large screen navigation bar */
-    #large_screen_nav{
+    #large_screen_nav {
         display: block;
     }
 
-     /* Animate a white underline to appear when hovering */
-     li a::after {
+    /* Animate a white underline to appear when hovering */
+    li a::after {
         content: "";
         width: 0;
         height: 2px;
@@ -323,7 +400,10 @@ a {
         z-index: 100;
     }
 
-    #home, #projects, #about, #connect{
+    #home,
+    #projects,
+    #about,
+    #connect {
         height: 100vh;
     }
 
@@ -332,11 +412,11 @@ a {
 
     #cards {
         flex-direction: row;
-    } 
+    }
 
     /* About me page */
 
-    #about.slides{
+    #about {
         height: auto;
     }
 
@@ -344,26 +424,26 @@ a {
         flex-direction: column;
     }
 
-    #headshot{
+    #headshot {
         min-width: 250px;
         height: auto;
     }
 
 
-    #about p{
+    #about p {
         margin: 0% 5%;
     }
 
-    #skill_wrapper{
+    #skill_wrapper {
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px; 
+        gap: 15px;
     }
 
-    #skills{
+    #skills {
         width: 80%;
     }
 
@@ -374,40 +454,42 @@ a {
         max-width: 550px;
     }
 
-    #about_wrapper{
+    #about_wrapper {
         display: flex;
         justify-content: space-around;
     }
 
-    #headshot{
+    #headshot {
         /* min-width: 50%; */
-        max-width: 368px;;
-        
+        max-width: 368px;
+        ;
+
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-    
+
     }
 }
 
 @media (min-width: 1280px) {
 
-    #cards{
+    #cards {
         gap: 6%;
     }
 
-    .card{
+    .card {
         width: 30%;
     }
 
-    .card-text{
+    .card-text {
         margin: 3%;
     }
 
-    #headshot{
+    #headshot {
         width: 30%;
     }
 }
