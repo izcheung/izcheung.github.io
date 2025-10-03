@@ -152,10 +152,49 @@ class MediaIconAnimator {
   }
 }
 
+class GreetingAnimation {
+  constructor() {
+    this.container = document.querySelector("#greetingContainer");
+    this.text = "Hi, I'm Irene";
+  }
+
+  addTextToContainer() {
+    this.text.split("").forEach((char) => {
+      const span = document.createElement("span");
+      if (char === " ") {
+        span.classList.add("space");
+        span.textContent = " ";
+      } else {
+        span.classList.add("letter");
+        span.textContent = char;
+      }
+      this.container.appendChild(span);
+    });
+  }
+
+  animate() {
+    this.addTextToContainer();
+    inView("#home", () => {
+      animate(
+        ".letter",
+        {
+          opacity: [0, 1],
+          y: [50, 0],
+        },
+        {
+          duration: 1,
+          delay: stagger(0.05),
+          easing: "ease-out",
+        }
+      );
+    });
+  }
+}
+
 class AddAnimation {
   initialize() {
     new CursorAnimator().attachEvents();
-
+    new GreetingAnimation().animate();
     new ClickableAnimator(document.querySelector("#resume_btn")).attachEvents();
 
     const iconNodeList = document.querySelectorAll(".icons");
@@ -169,32 +208,3 @@ class AddAnimation {
 }
 
 new AddAnimation().initialize();
-
-// animate("#home_title", { x: 300 }, { delay: stagger(0.1) });
-// const greetingContainer = document.querySelector("#greetingContainer");
-// const text = "Hi, I'm Irene";
-
-// text.split("").forEach((char) => {
-//   const span = document.createElement("span");
-//   if (char === " ") {
-//     span.classList.add("space");
-//     span.textContent = " ";
-//   } else {
-//     span.classList.add("letter");
-//     span.textContent = char;
-//   }
-//   greetingContainer.appendChild(span);
-// });
-
-// animate(
-//   ".letter",
-//   {
-//     opacity: [0, 1],
-//     y: [50, 0],
-//   },
-//   {
-//     duration: 0.6,
-//     delay: stagger(0.05),
-//     easing: "ease-out",
-//   }
-// );
