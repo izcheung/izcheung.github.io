@@ -24,24 +24,19 @@ h1 {
     text-shadow: 1px 1px 3px #000000;
 }
 
-/* Ensure animated greeting letters inherit heading font/spacing */
-#greetingContainer {
-    font-family: 'Questrial', sans-serif;
-}
-
-#greetingContainer .letter,
-#greetingContainer .space {
-    font: inherit;
-}
 
 #greetingContainer .letter {
     display: inline-block;
+    font: inherit;
+    margin-right: 0.20rem;
 }
 
 #greetingContainer .space {
     display: inline-block;
-    width: 0.3rem;
+    font: inherit;
+    width: 0.4rem;
 }
+
 
 h2 {
     font-size: 2rem;
