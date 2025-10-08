@@ -172,7 +172,7 @@ class GreetingAnimation {
     });
   }
 
-  animate() {
+  addStaggerAnimation() {
     this.addTextToContainer();
     inView("#home", () => {
       animate(
@@ -189,12 +189,47 @@ class GreetingAnimation {
       );
     });
   }
+
+  // addHoverAnimation() {
+  //   animate(
+  //     ".letter",
+  //     {
+  //       opacity: [0, 1],
+  //       y: [50, 0],
+  //     },
+  //     {
+  //       duration: 1,
+  //       delay: stagger(0.05),
+  //       easing: "ease-out",
+
+  //       onComplete: () => {
+  //         const letters = document.querySelectorAll(".letter");
+
+  //         letters.forEach((letter) => {
+  //           letter.style.display = "inline-block"; // enables transform
+
+  //           letter.addEventListener("mouseenter", () => {
+  //             animate(
+  //               letter,
+  //               { y: -10 },
+  //               { duration: 0.3, easing: "ease-out" }
+  //             );
+  //           });
+
+  //           letter.addEventListener("mouseleave", () => {
+  //             animate(letter, { y: 0 }, { duration: 0.3, easing: "ease-out" });
+  //           });
+  //         });
+  //       },
+  //     }
+  //   );
+  // }
 }
 
 class AddAnimation {
   initialize() {
     new CursorAnimator().attachEvents();
-    new GreetingAnimation().animate();
+    new GreetingAnimation().addStaggerAnimation();
     new ClickableAnimator(document.querySelector("#resume_btn")).attachEvents();
 
     const iconNodeList = document.querySelectorAll(".icons");
