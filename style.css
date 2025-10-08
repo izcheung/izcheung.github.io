@@ -83,7 +83,7 @@ section {
     gap: 3%;
 }
 
-#projects {
+#works {
     background: linear-gradient(180deg, rgb(161, 129, 103), rgb(245, 233, 223));
     height: auto;
 }
@@ -140,7 +140,7 @@ section {
 
 
 
-/* Projects page */
+/* works page */
 
 #cards {
     display: flex;
@@ -396,13 +396,13 @@ section {
     }
 
     #home,
-    #projects,
+    #works,
     #about,
     #connect {
         height: 100vh;
     }
 
-    /* Projects page */
+    /* works page */
 
 
     #cards {
