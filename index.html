@@ -24,6 +24,8 @@
 <!-- include social media platforms -->
 
 <body class="text-white">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
     <div id="main_screen">
         <header class="row" id="top_navbar">
             <!-- <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a> -->
@@ -54,10 +56,13 @@
             </ul>
         </nav>
         <main>
-            <div class="slides d-flex justify-content-center align-items-center" id="home" style="height: 100vh;">
-                <h1 class="text-center">Hi, I'm Irene!</h1>
+            <!-- Home -->
+            <div class="slides d-flex justify-content-center align-items-center bg-dark"" id=" home"
+                style="height: 100vh;">
+                <h1 id="greetingContainer"></h1>
                 <a href="./resume.pdf" download="resume.pdf"><button id="resume_btn" class="btn">Resume</button></a>
             </div>
+
             <div class="slides" id="about">
                 <div id="about_wrapper">
                     <h2>ABOUT ME</h2>
@@ -92,6 +97,7 @@
 
                 </div>
             </div>
+
             <div class="slides" id="technical_skills">
                 <div id="skill_wrapper">
                     <h3>TECHNICAL SKILLS</h3>
@@ -163,7 +169,8 @@
                 </div>
             </div>
 
-            <div class="slides d-flex " id="projects">
+            <!-- Projects -->
+            <div class="slides d-flex bg-light" id="projects">
                 <h2>PROJECTS</h2>
                 <div id="cards">
                     <div class="card">
@@ -251,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="slides" id="connect">
+            <div class="slides bg-dark" id="connect">
                 <h2 class="text-center">CONNECT WITH ME</h2>
                 <div id="icon_container">
                     <a href="https://github.com/izcheung" target="_blank"><img src="images/github_white.png"
@@ -264,6 +271,7 @@
             </div>
     </div>
     </main>
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
