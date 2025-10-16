@@ -1,10 +1,8 @@
+[![Live Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://izcheung.github.io)
+
 # Personal Website
 
 Welcome! Here's a portfolio website showcasing my work and skills.
-
-## 🚀 Live Demo
-
-[izcheung.github.io](https://izcheung.github.io)
 
 ## Tech Stack
 
