@@ -70,22 +70,17 @@ a {
 }
 
 #about {
-    background: linear-gradient(180deg,
-            #564743, #8d8785);
+    background: linear-gradient(180deg, #bcb5b2, #453f3d);
     height: auto;
     gap: 15%;
 }
 
-#technical_skills {
-    background: linear-gradient(180deg, #a2a1a1, #2e2d2d);
-
-    height: 100vh;
-}
 
 #projects {
-    background: linear-gradient(180deg, rgb(77, 59, 46), rgb(220, 200, 190));
+    background: linear-gradient(180deg, rgb(161, 129, 103), rgb(245, 233, 223));
     height: auto;
 }
+
 
 #connect {
     background-color: black;
