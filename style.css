@@ -65,7 +65,7 @@ a {
 
 #home {
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/homepage.jpg);
     gap: 3%;
 }
 
@@ -135,10 +135,7 @@ a {
     justify-content: center;
     gap: 30px;
     z-index: 1;
-
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-
 }
 
 .card {
@@ -146,35 +143,39 @@ a {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     z-index: 1;
+    width: 100px;
 }
 
 .card-img-top {
     border-radius: 30px 30px 0px 0px;
     width: 100%;
     height: 200px;
-    /* Fixed height for uniformity */
     object-fit: cover;
 }
 
 .card-body {
+    flex: 1;
+    /* Takes remaining space */
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /* Center content vertically */
+    text-align: center;
 }
 
 .card-title {
-    font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
-    font-size: 2rem;
+
     margin: 0px;
-    justify-content: center;
 }
 
 .card-text {
     margin: 2%;
 }
 
-.github_btn,
+*/ .github_btn,
 .website_btn,
 .youtube_btn {
     font-family: 'Questrial', sans-serif;
@@ -439,7 +440,7 @@ a {
 
 #cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -447,23 +448,31 @@ a {
 }
 
 .card {
-    width: 70%;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
     border: black;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {
     border-radius: 30px 30px 0px 0px;
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .card-title {
