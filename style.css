@@ -175,7 +175,7 @@ a {
     margin: 2%;
 }
 
-*/ .github_btn,
+.github_btn,
 .website_btn,
 .youtube_btn {
     font-family: 'Questrial', sans-serif;
@@ -188,7 +188,8 @@ a {
 }
 
 .github_btn:hover,
-.website_btn:hover {
+.website_btn:hover,
+.youtube_btn:hover {
     background-color: black;
     color: white;
 }
