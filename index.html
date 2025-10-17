@@ -19,11 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <title>Irene Z. Cheung | Programming | Design </title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Irene Z. Cheung | Software Developer </title>
 </head>
 <!-- include social media platforms -->
 
 <body class="text-white">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
     <div id="main_screen">
         <header class="row" id="top_navbar">
             <!-- <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a> -->
@@ -37,9 +40,8 @@
             <div class="collapse text-end" id="navbarToggleExternalContent">
                 <div id="nav_dropdown">
                     <h3><a href="#home" class="nav-links">HOME</a></h3>
-                    <h3><a href="#about" class="nav-links">ABOUT ME</a></h3>
-                    <h3><a href="#technical_skills" class="nav-links">TECHNICAL SKILLS</a></h3>
-                    <h3><a href="#projects" class="nav-links">PROJECTS</a></h3>
+                    <h3><a href="#projects" class="nav-links">WORKS</a></h3>
+                    <h3><a href="#about" class="nav-links">ABOUT</a></h3>
                     <h3><a href="#connect" class="nav-links">CONNECT</a></h3>
                 </div>
             </div>
@@ -47,131 +49,50 @@
         <nav id="large_screen_nav">
             <ul id="lg_nav_container">
                 <li><a href="#home" class="nav-links">HOME</a></li>
-                <li><a href="#about" class="nav-links">ABOUT ME</a></li>
-                <li><a href="#technical_skills" class="nav-links">TECHNICAL SKILLS</a></li>
-                <li><a href="#projects" class="nav-links">PROJECTS</a></li>
+                <li><a href="#projects" class="nav-links">WORKS</a></li>
+                <li><a href="#about" class="nav-links">ABOUT</a></li>
                 <li><a href="#connect" class="nav-links">CONNECT</a></li>
             </ul>
         </nav>
         <main>
-            <div class="slides d-flex justify-content-center align-items-center" id="home" style="height: 100vh;">
-                <h1 class="text-center">Hi, I'm Irene!</h1>
-                <a href="./resume.pdf" download="resume.pdf"><button id="resume_btn" class="btn">Resume</button></a>
-            </div>
-            <div class="slides" id="about">
-                <div id="about_wrapper">
-                    <h2>ABOUT ME</h2>
-                    <div class="container" display="flex" flex-direction="column">
-                        <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
-                        <div display="flex" flex-direction="column" id="about_text">
-                            <p>Hello, I'm Irene! I transitioned from working in the science and healthcare
-                                industry into
-                                the tech industry after
-                                finding a newfound passion for programming. Currently, I am a student in the Computer
-                                Systems Technology program at
-                                BCIT, where I got into its competitive Co-op program and gained hands-on experience at a
-                                fast-paced startup. During my internship, I
-                                got experience programming in modern technologies such as TypeScript,
-                                React, Next.js, Node.js, and MongoDB, earning a promotion within five months due
-                                to my
-                                adaptability and drive
-                                to learn.</p>
-
-                            <p>I am excited to apply my skills in software development, web development, and UX/UI
-                                design in a full-time role
-                                starting January 2026. My strong problem-solving and analytical skills, driven by my
-                                unique scientific background and eagerness to learn, help
-                                me tackle tech challenges effectively.</p>
-
-                            <p>Outside of programming, I enjoy traveling, hip-hop dancing, photography, and digital art.
-                                I am always eager to learn
-                                and collaborate on meaningful projects.</p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="slides" id="technical_skills">
-                <div id="skill_wrapper">
-                    <h3>TECHNICAL SKILLS</h3>
-                    <div id="skills">
-                        <div class="skill"><img src="public/bootstrap.svg" class="skill_icon">
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="skill"><img src="public/html.svg" class="skill_icon">
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill"><img src="public/css.svg" class="skill_icon">
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill"><img src="public/javascript.svg" class="skill_icon
-                            " alt="JavaScript icon">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill"><img src="public/python.svg" class="skill_icon" alt="Python icon">
-                            <p>Python</p>
-                        </div>
-                        <div class="skill"><img src="public/java.svg" class="skill_icon" alt="Java icon">
-                            <p>Java</p>
-                        </div>
-                        <div class="skill"><img src="public/nodejs.svg" class="skill_icon" alt="Node.js icon">
-                            <p>NodeJS</p>
-                        </div>
-                        <div class="skill"><img src="public/react.svg" class="skill_icon" alt="React icon">
-                            <p>React</p>
-                        </div>
-                        <div class="skill"><img src="public/typescript.svg" class="skill_icon                                   
-                            " alt="TypeScript icon">
-                            <p>TypeScript</p>
-                        </div>
-                        <div class="skill"><img src="public/mongodb.svg" class="skill_icon                              
-                            " alt="MongoDB icon">
-                            <p>MongoDB</p>
-                        </div>
-                        <div class="skill"><img src="public/nextjs.svg" class="skill_icon
-                            " alt="Next.js icon">
-                            <p>Next.js</p>
-                        </div>
-
-                        <div class="skill"><img src="public/material-ui.svg" class="skill_icon" alt="Material-UI icon">
-                            <p>Material-UI</p>
-                        </div>
-                        <div class="skill"><img src="public/mysql.svg" class="skill_icon" alt="MySQL icon">
-                            <p>MySQL</p>
-                        </div>
-                        <!-- <div class="skill"><img src="images/python_white.png" class="skill_icon" alt="Python icon">
-                            <p>Python</p>
-                        </div>
-                        <div class="skill"><img src="images/js_white.png" class="skill_icon" alt="JavaScript icon">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill"><img src="images/html_white.png" class="skill_icon" alt="HTML icon">
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill"><img src="images/css_white.png" class="skill_icon" alt="CSS icon">
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill"><img src="images/bootstrap_white.png" class="skill_icon"
-                                alt="Bootstrap icon">
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="skill"><img src="images/nodejs_white.png" class="skill_icon" alt="Node.js icon">
-                            <p>NodeJS</p>
-                        </div> -->
-                    </div>
-                </div>
+            <!-- Home Page -->
+            <div class="slides d-flex justify-content-center align-items-center bg-dark" id="home"
+                style="height: 100vh;">
+                <h1 id="greetingContainer"></h1>
+                <a href="./IreneCheungResume.pdf" download="IreneCheungResume.pdf"><button id="resume_btn"
+                        class="btn">Resume</button></a>
             </div>
 
-            <div class="slides d-flex " id="projects">
-                <h2>PROJECTS</h2>
+            <!-- Works Page -->
+            <div class="slides d-flex bg-light" id="projects">
+                <h2>WORKS</h2>
                 <div id="cards">
+
                     <div class="card">
+                        <img src="images/theTastyFork.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">The Tasty Fork</h5>
+                                <p class="card-text">A full-stack web application for a fictitious restaurant that
+                                    allows customers to make reservations,
+                                    submit reviews, and contact admins. Leverages AWS services.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/izcheung/theTastyFork" target="_blank"
+                                    class="github_btn">GitHub</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+
                         <img src="images/naborly.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Näborly</h5>
-                            <p class="card-text">A mobile web application for helping newcomers integrate into
-                                communities by encouraging community exploration using a game-like format.</p>
+                            <div>
+                                <h5 class="card-title">Näborly</h5>
+                                <p class="card-text">A mobile web application for helping newcomers integrate into
+                                    communities by encouraging community exploration using a game-like format.</p>
+                            </div>
                             <div id="btn_container">
                                 <a href="https://github.com/izcheung/naborly" target="_blank"
                                     class="github_btn">GitHub</a>
@@ -181,23 +102,60 @@
                         </div>
                     </div>
                     <div class="card">
+                        <img src="images/drtdash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Density Reporting Tool</h5>
+                                <p class="card-text">An early-stage React + TypeScript PWA that helps civil engineering
+                                    teams streamline and manage density testing
+                                    workflows.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/Density-Reporting-Tool/DensityReportingToolFrontend"
+                                    target="_blank" class="github_btn">GitHub</a>
+                                <a href="https://drt-ui-lrelh.ondigitalocean.app/" target="_blank"
+                                    class="website_btn">Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
                         <img src="images/pass_comp1510v2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Chocopass</h5>
-                            <p class="card-text">A command-line, text-based game that features a grid-based environment
-                                where a player can move a character in four cardinal directions. </p>
-                            <a href="https://github.com/izcheung/chocopass" target="_blank"
+                            <div>
+                                <h5 class="card-title">Chocopass</h5>
+                                <p class="card-text">A command-line, text-based game that features a grid-based
+                                    environment
+                                    where a player can move a character in four cardinal directions. </p>
+                            </div><a href="https://github.com/izcheung/chocopass" target="_blank"
                                 class="github_btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/saveThePlatypus.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Save the Platypus!</h5>
+                                <p class="card-text">A 2D JavaFX game where players control a platypus to dodge enemy
+                                    projectiles, utilizing object-oriented programming principles for modular design.
+                                </p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/izcheung/saveThePlatypus" target="_blank"
+                                    class="github_btn">GitHub</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/schedulize.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Schedulize</h5>
-                            <p class="card-text">A web application aimed at improving student well-being by generating
-                                personalized schedules that break down large
-                                tasks into manageable chunks, align with peak productivity times, and account for
-                                upcoming deadlines.</p>
+                            <div>
+                                <h5 class="card-title">Schedulize</h5>
+                                <p class="card-text">A web application aimed at improving student well-being by
+                                    generating
+                                    personalized schedules that break down large
+                                    tasks into manageable tasks.</p>
+                            </div>
                             <div id="btn_container">
                                 <a href="https://github.com/izcheung/schedulize" target="_blank"
                                     class="github_btn">GitHub</a>
@@ -208,38 +166,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/whatsInYourFridge.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">What's in your fridge?</h5>
-                            <p class="card-text">A web application integrated with the Spoonacular API that customizes
-                                recipes based on users' fridge ingredients, featuring an ingredient-based search and
-                                modal display of results.</p>
-                            <div id="btn_container">
-                                <a href="https://github.com/izcheung/whatsInYourFridge" target="_blank"
-                                    class="github_btn">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/saveThePlatypus.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Save the Platypus!</h5>
-                            <p class="card-text">A 2D JavaFX game where players control a platypus to dodge enemy
-                                projectiles, utilizing object-oriented programming principles for modular design and
-                                implementing dynamic mechanics.</p>
-                            <div id="btn_container">
-                                <a href="https://github.com/izcheung/saveThePlatypus" target="_blank"
-                                    class="github_btn">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
                         <img src="images/mySQLUserDoc.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">MySQL Work Bench User Doc</h5>
-                            <p class="card-text">A detailed user documentation on MySQL Workbench with step-by-step
-                                instructions and visuals for writing SQL commands in MySQL Workbench, covering tasks
-                                like managing tables, joining tables, and creating triggers</p>
+                            <div>
+                                <h5 class="card-title">MySQL Workbench User Doc</h5>
+                                <p class="card-text">Step-by-step MySQL Workbench guide with visuals, covering SQL
+                                    command writing, table management, joins, and trigger
+                                    creation.</p>
+                            </div>
                             <div id="btn_container">
                                 <a href="https://github.com/izcheung/mySQLWorkBenchUserDoc" target="_blank"
                                     class="github_btn">GitHub</a>
@@ -248,10 +182,134 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <img src="images/whatsInYourFridge.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">What's in your fridge?</h5>
+                                <p class="card-text">A web application integrated with the Spoonacular API that
+                                    customizes
+                                    recipes based on users' fridge ingredients.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/izcheung/whatsInYourFridge" target="_blank"
+                                    class="github_btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
 
-            <div class="slides" id="connect">
+            <!-- About Page -->
+            <div class="slides" id="about">
+                <div id="about_wrapper">
+                    <h2>ABOUT ME</h2>
+                    <div class="container" display="flex" flex-direction="column">
+                        <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
+                        <div display="flex" flex-direction="column" id="about_text">
+                            <p>
+                                Hello, I'm Irene! I transitioned from the healthcare industry to tech after
+                                discovering a passion for
+                                programming. I'm currently a Computer Systems Technology student at BCIT, graduating in
+                                December 2025, and seeking a
+                                full-time software development role. Through the competitive Co-op program, I gained
+                                hands-on experience at a fast-paced
+                                startup, working with TypeScript, React, Next.js, Node.js, Python, AI APIS, and MongoDB,
+                                and
+                                earned a
+                                promotion within five months for my
+                                adaptability and drive to learn.
+                            </p>
+                            <p>
+
+                                I'm excited to apply my skills to real-world problems that make an impact. My scientific
+                                background gives me strong
+                                analytical and problem-solving skills, and my eagerness to learn helps me tackle tech
+                                challenges effectively.
+                            </p>
+                            <p>
+                                Outside of programming, I enjoy traveling, fostering animals, and digital art!
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div id="skill_wrapper">
+                        <h3>TECHNICAL SKILLS</h3>
+                        <div id="skills">
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/typescript/white?viewbox=auto" />
+                                <p>Typescript</p>
+                            </div>
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/react/white?viewbox=auto" />
+                                <p>React</p>
+                            </div>
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/python/white?viewbox=auto" />
+                                <p>Python</p>
+                            </div>
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/javascript/white?viewbox=auto" />
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill">
+
+                                <img height="60" src="https://cdn.simpleicons.org/css/white?viewbox=auto" />
+                                <p>CSS</p>
+                            </div>
+                            <!-- <img height="60" src="https://cdn.simpleicons.org/java/white?viewbox=auto" /> -->
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/nodedotjs/white?viewbox=auto" />
+                                <p>Node.js</p>
+                            </div>
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/html5/white?viewbox=auto" />
+                                <p>HTML5</p>
+                            </div>
+
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/tailwindcss/white?viewbox=auto" />
+                                <p>Tailwind</p>
+                            </div>
+
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/mongodb/white?viewbox=auto" />
+                                <p>MongoDB</p>
+                            </div>
+
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/nextdotjs/white?viewbox=auto" />
+                                <p>Next.JS</p>
+                            </div>
+
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/mui/white?viewbox=auto" />
+                                <p>MUI</p>
+                            </div>
+
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/mysql/white?viewbox=auto" />
+                                <p>MySQL</p>
+                            </div>
+                            <div class="skill">
+                                <img height="60" src="https://cdn.simpleicons.org/docker/white?viewbox=auto" />
+                                <p>Docker</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connect Page -->
+            <div class="slides bg-dark" id="connect">
                 <h2 class="text-center">CONNECT WITH ME</h2>
                 <div id="icon_container">
                     <a href="https://github.com/izcheung" target="_blank"><img src="images/github_white.png"
@@ -262,8 +320,8 @@
                             class="icons" alt="Email address"></a>
                 </div>
             </div>
-    </div>
-    </main>
+        </main>
+        <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
