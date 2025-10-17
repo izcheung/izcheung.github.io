@@ -468,19 +468,14 @@ a {
 
 .card-body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex: 1;
     justify-content: space-between;
     padding: 20px;
 }
 
 .card-title {
-    font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
     font-size: 2rem;
-    margin: 0px;
-    justify-content: center;
 }
 
 .card-text {
