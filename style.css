@@ -129,11 +129,6 @@ a {
     border-radius: 50px;
     border: white 2px solid;
     color: white;
-    transition: all .2s ease-in-out;
-}
-
-#resume_btn:hover {
-    transform: scale(1.2);
 }
 
 /* Projects page */
