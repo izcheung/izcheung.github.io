@@ -441,6 +441,9 @@ a {
     display: inline-block;
     font: inherit;
     margin-right: 0.20rem;
+    opacity: 0;
+    transform: translateY(50px);
+    display: inline-block;
 }
 
 #greetingContainer .space {
