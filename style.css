@@ -6,7 +6,7 @@
 
 *,
 html {
-
+    cursor: none !important;
     scroll-behavior: smooth !important;
 }
 
