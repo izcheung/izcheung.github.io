@@ -437,6 +437,11 @@ a {
     }
 }
 
+#greetingContainer {
+    font-size: clamp(1.6rem, 8vw, 3rem);
+    line-height: 1.1;
+}
+
 #greetingContainer .letter {
     display: inline-block;
     font: inherit;
