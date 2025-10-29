@@ -134,7 +134,7 @@ header {
 }
 
 /* Frosted, transparent background for the hamburger dropdown */
-#navbarToggleExternalContent {
+#mobile_nav_dropdown_wrapper {
     position: absolute;
     right: 0px;
     top: 56px;
@@ -153,7 +153,7 @@ header {
 }
 
 /* Slightly stronger when open */
-#navbarToggleExternalContent.show {
+#mobile_nav_dropdown_wrapper.show {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
@@ -377,7 +377,7 @@ header {
         display: none;
     }
 
-    #navbarToggleExternalContent {
+    #mobile_nav_dropdown_wrapper {
         display: none;
     }
 
