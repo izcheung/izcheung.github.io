@@ -26,9 +26,14 @@
 <!-- include social media platforms -->
 
 <body class="text-white">
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
+
+
     <div id="main_screen">
+        <!-- Cursor animation -->
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+
+        <!-- Mobile Navigation -->
         <header class="row" id="top_navbar">
             <!-- <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a> -->
             <nav class="navbar navbar-dark col justify-content-end" id="toggle_btn">
@@ -41,16 +46,19 @@
             <div class="collapse text-end" id="navbarToggleExternalContent">
                 <div id="nav_dropdown">
                     <h3><a href="#home" class="nav-links">HOME</a></h3>
-                    <h3><a href="#projects" class="nav-links">WORKS</a></h3>
+                    <h3><a href="#work" class="nav-links">WORK</a></h3>
+                    <h3><a href="#projects" class="nav-links">PROJECTS</a></h3>
                     <h3><a href="#about" class="nav-links">ABOUT</a></h3>
                     <h3><a href="#connect" class="nav-links">CONNECT</a></h3>
                 </div>
             </div>
         </header>
+
         <nav id="large_screen_nav">
             <ul id="lg_nav_container">
                 <li><a href="#home" class="nav-links">HOME</a></li>
-                <li><a href="#projects" class="nav-links">WORKS</a></li>
+                <li><a href="#work" class="nav-links">WORK</a></li>
+                <li><a href="#projects" class="nav-links">PROJECTS</a></li>
                 <li><a href="#about" class="nav-links">ABOUT</a></li>
                 <li><a href="#connect" class="nav-links">CONNECT</a></li>
             </ul>
@@ -64,9 +72,64 @@
                         class="btn">Resume</button></a>
             </div>
 
-            <!-- Works Page -->
+            <!-- Work Page -->
+            <div class="slides d-flex bg-light" id="work">
+                <h2>WORK</h2>
+                <div id="cards">
+                    <div class="card">
+                        <img src="images/shopThisCityLogo.webp" width="150px" height="auto" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Shop This City</h5>
+                                <p class="card-text">A fashion e-commerce progressive web application to connect local
+                                    boutiques with customers.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://www.shopthis.city/" target="_blank" class="website_btn">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <img src="images/unboxLogo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Unbox</h5>
+                                <p class="card-text">A mobile web application for helping newcomers integrate into
+                                    communities by encouraging community exploration using a game-like format.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/izcheung/naborly" target="_blank"
+                                    class="github_btn">GitHub</a>
+                                <a href="https://comp1800-dtc04-1214c.web.app/" target="_blank"
+                                    class="website_btn">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/drtdash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Density Reporting Tool</h5>
+                                <p class="card-text">An early-stage React + TypeScript PWA that helps civil engineering
+                                    teams streamline and manage density testing
+                                    workflows.</p>
+                            </div>
+                            <div id="btn_container">
+                                <a href="https://github.com/Density-Reporting-Tool/DensityReportingToolFrontend/tree/dev"
+                                    target="_blank" class="github_btn">GitHub</a>
+                                <a href="https://drt-ui-lrelh.ondigitalocean.app/" target="_blank"
+                                    class="website_btn">Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Page -->
             <div class="slides d-flex bg-light" id="projects">
-                <h2>WORKS</h2>
+                <h2>PROJECTS</h2>
                 <div id="cards">
 
                     <div class="card">
@@ -172,8 +235,7 @@
                             <div>
                                 <h5 class="card-title">MySQL Workbench User Doc</h5>
                                 <p class="card-text">Step-by-step MySQL Workbench guide with visuals, covering SQL
-                                    command writing, table management, joins, and trigger
-                                    creation.</p>
+                                    core database commands.</p>
                             </div>
                             <div id="btn_container">
                                 <a href="https://github.com/izcheung/mySQLWorkBenchUserDoc" target="_blank"

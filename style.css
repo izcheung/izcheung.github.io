@@ -63,10 +63,19 @@ a {
     padding: 10%;
 }
 
+/* Backgrounds for each page */
+
 #home {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/homepage.jpg);
     gap: 3%;
+}
+
+#work {
+    /* background: linear-gradient(180deg, #bcb5b2, #453f3d); */
+    background: linear-gradient(180deg, #b5b88c, #4d4f38);
+    height: auto;
+    gap: 15%;
 }
 
 #about {
@@ -102,6 +111,30 @@ a {
 
 #nav_dropdown {
     margin-top: 3%;
+}
+
+/* Frosted, transparent background for the hamburger dropdown */
+#navbarToggleExternalContent {
+    position: absolute;
+    right: 0px;
+    top: 56px;
+    width: auto;
+    /* let Bootstrap control display for collapse */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari */
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: backdrop-filter 0.2s ease, background-color 0.2s ease;
+    z-index: 1000;
+}
+
+/* Slightly stronger when open */
+#navbarToggleExternalContent.show {
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 .navbar {
@@ -317,8 +350,14 @@ a {
 @media (min-width: 768px) {
 
     /* Hide mobile toggle navigation bar */
+
+
     .navbar-toggler,
     #nav_dropdown {
+        display: none;
+    }
+
+    #navbarToggleExternalContent {
         display: none;
     }
 
@@ -437,7 +476,8 @@ a {
     }
 }
 
-#greetingContainer {
+#greetingContainer,
+h2 {
     font-size: clamp(1.6rem, 8vw, 3rem);
     line-height: 1.1;
 }
