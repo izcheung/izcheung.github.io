@@ -31,6 +31,7 @@ h1 {
 
 h2 {
     font-size: clamp(1.6rem, 6vw, 2rem);
+
 }
 
 h1,
@@ -63,11 +64,16 @@ header {
     display: fixed;
 }
 
+.nav-links {
+    font-family: 'Questrial', sans-serif;
+}
+
 #main_screen {
     width: 100%;
     min-height: 100svh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 .slides {
@@ -200,16 +206,23 @@ header {
     font-size: 1.3rem;
 }
 
+#work-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
 
 .work-card {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    padding: 20px;
-    width: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -227,7 +240,6 @@ header {
 #work .work-card-body {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 /* Header row inside each card */
@@ -266,16 +278,15 @@ header {
 }
 
 /* Work grid - single column on mobile, two on tablet+ */
-#work-cards,
-#work-cards.row,
+/* #work-cards,#work-cards.row,
 #work .row {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
     width: 100%;
-}
+} */
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
 
     #work-cards,
     #work-cards.row,
@@ -283,7 +294,7 @@ header {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-}
+} */
 
 /* Buttons alignment inside work cards */
 #work .website_btn,
@@ -507,8 +518,6 @@ header {
 @media (min-width: 768px) {
 
     /* Hide mobile toggle navigation bar */
-
-
     .navbar-toggler,
     #nav_dropdown {
         display: none;
@@ -593,6 +602,10 @@ header {
 }
 
 @media (min-width: 915px) {
+    h2 {
+        margin-top: 0px;
+    }
+
     #about p {
         max-width: 550px;
     }
@@ -611,19 +624,22 @@ header {
     .container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         width: 100%;
     }
 }
 
 @media (min-width: 1280px) {
 
-    #headshot {
-        width: 30%;
-    }
+
 
     .card {
         width: calc(33.33% - 20px);
+    }
+
+    *,
+    html {
+        cursor: none !important;
+        scroll-behavior: smooth !important;
     }
 
     /* Cursor */
@@ -753,30 +769,3 @@ header {
     gap: 10%;
     width: 100%;
 }
-
-/* @media (max-width: 767px) {
-
-
-    #about.slides {
-        height: auto;
-        padding: 24px 16px;
-        gap: 20px;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-
-
-    #about_wrapper {
-        gap: 20px;
-    }
-
-    #headshot {
-        max-width: 260px;
-        width: 100%;
-    }
-
-    #about p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-} */
