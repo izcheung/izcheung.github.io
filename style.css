@@ -97,12 +97,13 @@ header {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .slides {
     width: 100%;
     min-height: 100vh;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -115,14 +116,14 @@ header {
 /* Desktop only: enable scroll snap */
 @media (min-width: 992px) {
     #main_screen {
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
         /* smoother snap */
     }
 
     .slides {
         /* ensure full-viewport sections */
         scroll-snap-align: start;
-        scroll-snap-stop: always;
+        scroll-snap-stop: normal;
     }
 }
 
@@ -522,6 +523,10 @@ header {
     .navbar-toggler,
     #nav_dropdown {
         display: none;
+    }
+
+    #about {
+        padding: 3%
     }
 
 
