@@ -26,10 +26,12 @@
 
 
 <body class="text-white">
+
+    <!-- Custom cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+
     <div id="main_screen">
-        <!-- Cursor animation -->
         <!-- <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a> -->
 
         <!-- Mobile Navigation -->
@@ -52,6 +54,7 @@
             </div>
         </header>
 
+        <!-- Large screen navigation -->
         <nav id="large_screen_nav">
             <ul id="lg_nav_container">
                 <li><a href="#home" class="nav-links">HOME</a></li>
@@ -61,33 +64,135 @@
                 <li><a href="#connect" class="nav-links">CONNECT</a></li>
             </ul>
         </nav>
-        <main>
+
+        <!-- Main content -->
+        <main id="main_content">
             <!-- Home Page -->
-            <div class="slides d-flex justify-content-center align-items-center bg-dark" id="home">
+            <section id="home" class="slides d-flex justify-content-center align-items-center bg-dark">
                 <h1 id="greetingContainer"></h1>
                 <a href="./IreneCheungResume.pdf" download="IreneCheungResume.pdf"><button id="resume_btn"
                         class="btn">Resume</button></a>
-            </div>
+            </section>
 
             <!-- Work Page -->
-            <div class="slides d-flex bg-light" id="work">
+            <section id="work" class="slides d-flex bg-light">
                 <h2>WORK EXPERIENCE</h2>
-                <div id="cards">
-                    <div class="card">
-                        <img src="images/shopThisCityLogo.webp" width="150px" height="auto" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <div>
-                                <h5 class="card-title">Shop This City</h5>
-                                <p class="card-text">A fashion e-commerce progressive web application to connect local
-                                    boutiques with customers.</p>
+                <div id="work-cards row">
+
+
+
+                    <!-- Shop This City -->
+                    <div class="work-card text-black">
+                        <div class="d-flex justify-content-between">
+                            <img class="work-logo" src="images/shopThisCityLogo.webp" alt="...">
+                            <a href="https://www.shopthis.city/" target="_blank" class="website_btn">Website</a>
+                        </div>
+
+                        <div class="work-card-body">
+                            <p class="work-card-text">A fashion e-commerce progressive web application to connect
+                                local
+                                boutiques with customers.</p>
+
+                            <!-- Second Contract -->
+                            <div class="d-flex justify-content-between">
+                                <h6 class="work-card-title">Junior Backend Developer [Contract]</h6>
+                                <p>Apr 2025 - Oct 2025</p>
                             </div>
-                            <div id="btn_container">
-                                <a href="https://www.shopthis.city/" target="_blank" class="website_btn">Website</a>
+                            <ul>
+                                <li>Architected and developed an AI automation tool to process product data every 5
+                                    minutes, improving admin workflow
+                                    efficiency for a fashion e-commerce PWA serving 90,000+ users [Python, Gemini
+                                    API,
+                                    MySQL, Google Cloud Functions]
+                                </li>
+                                <li>Saved significant admin hours by automating product categorization, style
+                                    tagging,
+                                    color detection, title generation,
+                                    brand labeling, and description cleaning for 50–500 products daily
+                                </li>
+                                <li>Strengthened AI output reliability through refined prompt engineering and
+                                    real-time Slack log integration
+                                </li>
+                                <li>Optimized performance and cost efficiency through async processing and token
+                                    tracking
+                                </li>
+                                <li>Ensured code quality by developing 430+ pytest tests and iterating based on
+                                    business feedback in an Agile workflow
+                                </li>
+                            </ul>
+
+                            <!-- First Internship -->
+                            <div class="d-flex justify-content-between">
+                                <h6 class="work-card-title">Junior Full Stack Developer [Internship]</h6>
+                                <p>Apr 2024 - Dec 2024</p>
                             </div>
+                            <ul>
+                                <li>Engineered a microservice to process Google Analytics user action data, enabling
+                                    monthly business reports to guide
+                                    strategic decisions and track key performance indicators [Node.js, Express,
+                                    Typescript, Google Analytics]
+                                </li>
+                                <li>Developed REST APIs serving two internal services, streamlining data access and
+                                    management
+                                </li>
+                                <li>Expanded project ownership by building the frontend admin analytics interface,
+                                    creating an intuitive, filterable dashboard for admins to monitor product
+                                    performance [React, Next.js, TypeScript, Material UI]
+                                </li>
+                                <li>Created core B2B ordering interfaces, including order summary and details pages,
+                                    streamlining transaction workflows for wholesalers and retail partners [React,
+                                    Next.js, TypeScript]
+                                </li>
+                                <li>Promoted within five months from intern to junior developer for consistently
+                                    delivering high-quality, impactful solutions
+                                </li>
+                            </ul>
+
+
+
+
                         </div>
                     </div>
-                    <div class="card">
+
+                    <!-- Unbox -->
+
+                    <div class="work-card text-black">
+                        <div class="d-flex justify-content-between">
+                            <img class="work-logo" src="images/unboxLogo.png" alt="...">
+                            <a href="https://unboxpty.com/" target="_blank" class="website_btn">Website</a>
+                        </div>
+
+                        <div class="work-card-body">
+                            <p class="work-card-text">A South American logistics client that offers shipping services.
+                            </p>
+
+
+                            <div class="d-flex justify-content-between">
+                                <h6 class="work-card-title">Frontend Developer [Freelance]</h6>
+                                <p>Apr 2025 - Dec 2025</p>
+                            </div>
+                            <ul>
+                                <li>Modernize the user experience for 13,000+ users by developing a responsive
+                                    Progressive Web Application (PWA) for a
+                                    South American logistics client in collaboration with four developers [React,
+                                    Typescript, Tailwind CSS, Zustand]
+                                </li>
+                                <li>Develop core interfaces, including Invoices, Settings, and Notifications, for a
+                                    logistics PWA designed for a client
+                                    managing 1,000+ invoices/payments daily
+                                </li>
+                                <li>Lead the high-fidelity UI/UX prototype designs to meet client requirements and
+                                    establish the platform’s brand identity
+                                    [Figma]
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="card">
 
                         <img src="images/unboxLogo.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -120,12 +225,12 @@
                                     class="website_btn">Website</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-            </div>
+            </section>
 
             <!-- Projects Page -->
-            <div class="slides d-flex bg-light" id="projects">
+            <section id="projects" class="slides d-flex bg-light">
                 <h2>PROJECTS</h2>
                 <div id="cards">
 
@@ -262,10 +367,10 @@
 
 
                 </div>
-            </div>
+            </section>
 
             <!-- About Page -->
-            <div class="slides" id="about">
+            <section id="about" class="slides">
                 <div id="about_wrapper">
                     <h2>ABOUT ME</h2>
                     <div class="container" display="flex" flex-direction="column">
@@ -366,10 +471,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Connect Page -->
-            <div class="slides bg-dark" id="connect">
+            <section id="connect" class="slides bg-dark">
                 <h2 class="text-center">CONNECT WITH ME</h2>
                 <div id="icon_container">
                     <a href="https://github.com/izcheung" target="_blank"><img src="images/github_white.png"
@@ -379,7 +484,7 @@
                     <a href="mailto:icheung24@my.bcit.com"><img src="images/envelope_white.png" id="email_icon"
                             class="icons" alt="Email address"></a>
                 </div>
-            </div>
+            </section>
         </main>
         <script src="js/script.js" type="module"></script>
 </body>

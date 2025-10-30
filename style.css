@@ -14,8 +14,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
 }
@@ -33,7 +32,16 @@ h2 {
     font-size: clamp(1.6rem, 8vw, 2rem);
 }
 
+h6 {
+    font-family: 'Questrial', sans-serif;
+}
+
 p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -88,9 +96,7 @@ header {
 } */
 
 #work {
-    /* background: linear-gradient(180deg, #bcb5b2, #453f3d); */
     background: linear-gradient(180deg, #b5b88c, #4d4f38);
-    /* height: 100vh; */
     gap: 15%;
 }
 
@@ -179,6 +185,35 @@ header {
     color: white;
 }
 
+/* Work page */
+
+.work-card-title {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1.3rem;
+}
+
+
+.work-card {
+    /* align-items: center; */
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    /* max-width: 400px; */
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.work-logo {
+    max-width: 350px;
+    max-height: 80px;
+    object-fit: fit;
+}
+
 /* Projects page */
 
 #cards {
@@ -237,6 +272,10 @@ header {
     border: 1px black solid;
     padding: 2px 10px;
     transition: all .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
     /* margin: 5%; */
 }
 
