@@ -8,7 +8,7 @@
 html {
     cursor: none !important;
     scroll-behavior: smooth !important;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -95,8 +95,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    scroll-snap-align: none;
-    /* no snap target by default */
     padding: 10%;
 }
 
@@ -165,7 +163,6 @@ header {
     position: fixed;
     top: 2%;
     right: 5%;
-    /* width: 100%; */
     z-index: 100;
 }
 
