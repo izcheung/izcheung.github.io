@@ -50,14 +50,16 @@ h6 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 0.95em;
     font-family: 'Open Sans', sans-serif;
 }
 
 li {
-    font-size: 20px;
+    font-size: 0.95rem;
     font-family: 'Open Sans', sans-serif;
 }
+
+
 
 a {
     color: white;
@@ -224,6 +226,10 @@ header {
     font-size: 1.3rem;
 }
 
+.work-card-text {
+    margin-top: 10px;
+}
+
 #work-cards {
     display: flex;
     flex-direction: row;
@@ -253,6 +259,39 @@ header {
     height: auto;
     width: auto;
     object-fit: contain;
+}
+
+/* Mobile-responsive header: stack logo and button; keep button in-bounds */
+@media (max-width: 575px) {
+    .work-card {
+        width: 100%;
+        max-width: 400px;
+        /* match project card width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work-card .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .work-card .website_btn,
+    .work-card .github_btn,
+    .work-card .youtube_btn {
+        width: 100%;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 36px;
+    }
+
+    .work-logo {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 #shopThisCityLogo {
