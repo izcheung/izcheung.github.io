@@ -8,6 +8,7 @@
 html {
     cursor: none !important;
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 body {
@@ -164,7 +165,7 @@ header {
     position: fixed;
     top: 2%;
     right: 5%;
-    width: 100%;
+    /* width: 100%; */
     z-index: 100;
 }
 
