@@ -10,6 +10,12 @@ html {
     scroll-behavior: smooth !important;
 }
 
+body {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -17,8 +23,8 @@ h4,
 h5 {
     font-family: 'Questrial', sans-serif;
     letter-spacing: 0.3rem;
-
 }
+
 
 h1 {
     /* Greeting container */
@@ -68,36 +74,42 @@ header {
     font-family: 'Questrial', sans-serif;
 }
 
-/* #main_screen {
-        width: 100%;
-        min-height: 100svh;
-        overflow-y: auto;
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth;
-    } */
+
 
 #main_screen {
     width: 100%;
     height: 100vh;
-    /* make it fill the viewport */
     overflow-y: scroll;
-    /* allow vertical scrolling */
-    scroll-snap-type: y mandatory;
-    /* snap vertically */
-    scroll-behavior: smooth;
 }
 
 .slides {
     width: 100%;
-    min-height: 100svh;
+    min-height: 100vh;
+    scroll-snap-align: start;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    scroll-snap-align: start;
+    scroll-snap-align: none;
+    /* no snap target by default */
     padding: 25%;
+}
+
+/* Desktop only: enable scroll snap */
+@media (min-width: 992px) {
+    #main_screen {
+        scroll-snap-type: y mandatory;
+        /* smoother snap */
+    }
+
+    .slides {
+        min-height: 100vh;
+        /* ensure full-viewport sections */
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 }
 
 /* Backgrounds for each page */
@@ -129,7 +141,6 @@ header {
 
 #about {
     background: linear-gradient(180deg, #bcb5b2, #453f3d);
-    gap: 10%;
 }
 
 
@@ -599,7 +610,6 @@ header {
     *,
     html {
         cursor: none !important;
-        scroll-behavior: smooth !important;
     }
 
     /* Cursor */
