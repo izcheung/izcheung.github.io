@@ -68,11 +68,22 @@ header {
     font-family: 'Questrial', sans-serif;
 }
 
+/* #main_screen {
+        width: 100%;
+        min-height: 100svh;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    } */
+
 #main_screen {
     width: 100%;
-    min-height: 100svh;
-    overflow-y: auto;
+    height: 100vh;
+    /* make it fill the viewport */
+    overflow-y: scroll;
+    /* allow vertical scrolling */
     scroll-snap-type: y mandatory;
+    /* snap vertically */
     scroll-behavior: smooth;
 }
 
