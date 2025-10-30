@@ -94,7 +94,7 @@ header {
     gap: 20px;
     scroll-snap-align: none;
     /* no snap target by default */
-    padding: 25%;
+    padding: 10%;
 }
 
 /* Desktop only: enable scroll snap */
@@ -105,7 +105,6 @@ header {
     }
 
     .slides {
-        min-height: 100vh;
         /* ensure full-viewport sections */
         scroll-snap-align: start;
         scroll-snap-stop: always;
@@ -118,7 +117,7 @@ header {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/homepage.jpg);
     gap: 3%;
-    height: 100vh;
+
 }
 
 /* #home {
@@ -147,7 +146,7 @@ header {
 
 #connect {
     background-color: black;
-    height: 100vh;
+
 }
 
 /* 
@@ -474,10 +473,6 @@ header {
         display: none;
     }
 
-    .slides {
-
-        padding: 20%;
-    }
 
     #mobile_nav_dropdown_wrapper {
         display: none;
@@ -566,12 +561,6 @@ header {
         max-width: 550px;
     }
 
-    .slides {
-
-        padding: 15%;
-    }
-
-
     #about_wrapper {
         display: flex;
         justify-content: space-around;
@@ -591,10 +580,6 @@ header {
 }
 
 @media (min-width: 1280px) {
-    .slides {
-
-        padding: 10%;
-    }
 
 
     .card {
@@ -670,6 +655,9 @@ header {
     }
 }
 
+#greetingContainer {
+    margin-bottom: 10px;
+}
 
 #greetingContainer .letter {
     display: inline-block;
