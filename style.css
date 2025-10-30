@@ -8,13 +8,27 @@
 html {
     cursor: none !important;
     scroll-behavior: smooth !important;
-    /* overflow-x: hidden; */
+
 }
 
 body {
+    overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
     padding: 0;
+}
+
+#main_screen,
+.slides,
+header,
+nav {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.cursor-dot,
+.cursor-ring {
+    overflow: hidden;
 }
 
 h1,
