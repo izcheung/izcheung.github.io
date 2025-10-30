@@ -30,7 +30,7 @@ h1 {
 
 
 h2 {
-    font-size: clamp(1.6rem, 6vw, 2rem);
+    font-size: clamp(1rem, 6vw, 2rem);
 
 }
 
@@ -86,7 +86,7 @@ header {
     align-items: center;
     gap: 20px;
     scroll-snap-align: start;
-    padding: 10%;
+    padding: 25%;
 }
 
 /* Backgrounds for each page */
@@ -109,19 +109,16 @@ header {
 
 #work {
     background: linear-gradient(180deg, #b5b88c, #4d4f38);
-
 }
 
 
 #projects {
     background: linear-gradient(180deg, rgb(161, 129, 103), rgb(245, 233, 223));
-    height: auto;
 }
 
 #about {
     background: linear-gradient(180deg, #bcb5b2, #453f3d);
-    height: auto;
-    gap: 15%;
+    gap: 10%;
 }
 
 
@@ -212,7 +209,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    max-width: 1100px;
 }
+
+
 
 
 .work-card {
@@ -222,53 +222,23 @@ header {
     padding: 30px;
     display: flex;
     flex-direction: column;
-
+    max-width: 75%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .work-logo {
-    max-width: 220px;
-    max-height: 60px;
+    max-width: 200px;
+    max-height: 70px;
     height: auto;
     width: auto;
     object-fit: contain;
 }
 
-/* Layout and spacing for the Work section */
-
-
-#work .work-card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header row inside each card */
-#work .d-flex.justify-content-between {
-    align-items: center;
-    gap: 12px;
-}
-
-/* Improve bullets for achievements */
-#work ul {
-    margin: 6px 0 0 0;
-    padding-left: 20px;
-}
-
-#work li {
-    margin: 6px 0;
-    line-height: 1.5;
-}
-
-/* Subheading and dates row */
-#work .work-card-title {
-    font-weight: 600;
-    letter-spacing: 0.06rem;
-}
-
-#work .work-dates {
-    color: #333;
-    font-size: 0.95rem;
-    margin: 0;
+#shopThisCityLogo {
+    max-width: 250px;
+    height: 90px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Card hover */
@@ -277,49 +247,6 @@ header {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
-/* Work grid - single column on mobile, two on tablet+ */
-/* #work-cards,#work-cards.row,
-#work .row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    width: 100%;
-} */
-
-/* @media (min-width: 900px) {
-
-    #work-cards,
-    #work-cards.row,
-    #work .row {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-} */
-
-/* Buttons alignment inside work cards */
-#work .website_btn,
-#work .github_btn,
-#work .youtube_btn {
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    min-height: 34px;
-}
-
-/* Constrain the Work section content width for readability */
-#work .slides,
-#work {
-    /* safeguard if either selector applies */
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-#work>h2,
-#work>div {
-    /* section title and container */
-    width: 100%;
-    max-width: 1100px;
-}
 
 /* Projects page */
 
@@ -382,6 +309,8 @@ header {
     align-items: center;
     justify-content: center;
     display: flex;
+    height: 40px;
+
 
     /* margin: 5%; */
 }
@@ -523,6 +452,11 @@ header {
         display: none;
     }
 
+    .slides {
+
+        padding: 20%;
+    }
+
     #mobile_nav_dropdown_wrapper {
         display: none;
     }
@@ -531,6 +465,7 @@ header {
     #large_screen_nav {
         display: block;
     }
+
 
     /* Animate a white underline to appearwhen hovering */
     li a::after {
@@ -565,7 +500,6 @@ header {
 
     #cards {
         flex-direction: row;
-
     }
 
     .card {
@@ -610,6 +544,12 @@ header {
         max-width: 550px;
     }
 
+    .slides {
+
+        padding: 15%;
+    }
+
+
     #about_wrapper {
         display: flex;
         justify-content: space-around;
@@ -629,11 +569,20 @@ header {
 }
 
 @media (min-width: 1280px) {
+    .slides {
 
+        padding: 10%;
+    }
 
 
     .card {
         width: calc(33.33% - 20px);
+    }
+
+    .work-card {
+
+        max-width: 75%;
+
     }
 
     *,
@@ -682,6 +631,21 @@ header {
         transform: translate(-25px, -25px);
         border-color: #f97316 !important;
         opacity: 1;
+    }
+}
+
+@media (min-width: 1280px) {
+
+
+
+    .card {
+        width: calc(33.33% - 20px);
+    }
+
+    .work-card {
+
+        max-width: 85%;
+
     }
 }
 
