@@ -1,8 +1,7 @@
 {
   "main": "server.js",
   "dependencies": {
-    "express": "^5.1.0",
-    "node": "^25.1.0"
+    "express": "^5.1.0"
   },
   "scripts": {
     "start": "node server.js"
