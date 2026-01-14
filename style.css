@@ -60,13 +60,17 @@ h6 {
 }
 
 p {
-    font-size: 0.95em;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
 }
 
 li {
     font-size: 0.95rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+li strong {
+    font-weight: 700;
 }
 
 
